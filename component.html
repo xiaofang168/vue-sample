@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Vue组件使用</title>
+    <script src="https://cdn.staticfile.org/vue/3.0.5/vue.global.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <runoob></runoob>
+      <!--自定义的计时组件-->
+      <button-counter></button-counter>
+    </div>
+
+    <script>
+      // 创建一个Vue 应用
+      const app = Vue.createApp({});
+
+      // 定义一个名为 runoob的新全局组件
+      app.component("runoob", {
+        template: "<h1>自定义组件!</h1>",
+      });
+
+      // 定义一个名为 button-counter 的新全局组件
+      app.component("button-counter", {
+        data() {
+          return {
+            count: 0,
+          };
+        },
+        template: `<button @click="count++">点了 {{ count }} 次！</button>`,
+      });
+
+      app.mount("#app");
+    </script>
+  </body>
+</html>
