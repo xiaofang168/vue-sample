@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Vue样例</title>
+    <script src="https://cdn.staticfile.org/vue/3.0.5/vue.global.js"></script>
+    <style>
+        .class1 {
+            background: #444;
+            color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        v-开头的是指令
+        <br />
+        {{count}}
+        <label for="r1">修改颜色v-model指令</label>
+        <input type="checkbox" v-model="use" />
+        <br />
+        <!--在这里class是参数，告知v-bind指令将该元素的class属性与表达式"{'class1': use}"的值绑定-->
+        <div v-bind:class="{'class1': use}">
+            v-bind:class 指令
+        </div>
+        <p v-if="seen">v-if指令使用true，false</p>
+        v-for遍历指令：
+        <ol>
+            <li v-for="site in sites">
+              {{ site.text }}
+            </li>
+          </ol>
+    </div>
+    <script>
+        const app = Vue.createApp({
+            data() {
+                return {
+                    count: 4,
+                    use: false,
+                    seen: true,
+                    sites: [
+                        { text: 'Google' },
+                        { text: 'Runoob' },
+                        { text: 'Taobao' }
+                    ]
+                };
+            },
+            methods: {
+                incr() {
+                    this.count++;
+                },
+            },
+        });
+        const vm = app.mount("#app");
+        vm.incr();
+        console.log(vm.count);
+    </script>
+</body>
+
+</html>
