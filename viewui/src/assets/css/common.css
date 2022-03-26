@@ -1,0 +1,61 @@
+﻿.hidden {
+    display: none !important;
+}
+
+.opacity {
+    opacity: 0 !important;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.no-scroll {
+    overflow: hidden !important;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.area-title {
+    font-size: 18px;
+    padding-left: 27px;
+    color: #000;
+    font-weight: 600;
+}
+
+.page-block {
+    padding: 10px 20px;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px #ccc;
+    overflow-x: hidden;
+}
+
+.chart-page .ivu-form-item-label {
+    color: #666;
+}
+
+.chart-page .ivu-tag-text, .chart-page .ivu-select-selected-value {
+    color: #999;
+}
+
+.ivu-spin-fix {
+    z-index: 999;
+}

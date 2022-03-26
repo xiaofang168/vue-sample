@@ -1,0 +1,221 @@
+html {}
+
+.ivu-layout {
+    height: 100%;
+}
+
+.ivu-layout-header {
+    padding: 0;
+    background-color: #4E72E7;
+    height: 66px;
+}
+
+.layout-header-title {
+    font-size: 30px;
+    color: #fff;
+    float: left;
+    padding-left: 10px;
+    padding-right: 40px;
+}
+
+.layout-header-title .logo {
+    width: 30px;
+    height: 30px;
+    vertical-align: top;
+    margin-top: 18px;
+    margin-right: 12px;
+}
+
+.ivu-breadcrumb {
+    float: left;
+    margin-left: 20px;
+}
+
+.ivu-breadcrumb-item-link,
+.ivu-breadcrumb-item-separator {
+    font-size: 12px;
+    color: #fff;
+    line-height: 24px;
+}
+
+.ivu-breadcrumb>span:last-child .ivu-breadcrumb-item-link {
+    font-weight: bold;
+}
+
+.login-out {
+    float: right;
+    padding-right: 30px;
+    font-size: 18px;
+}
+
+.login-out .ivu-dropdown-rel a,
+.login-out .ivu-dropdown-rel i {
+    color: #fff !important;
+}
+
+.ivu-layout-sider {
+    background-color: #E0E8FF;
+    user-select: none;
+    min-height: 550px;
+}
+
+.ivu-menu-submenu,
+.ivu-menu-item {
+    background-color: #E0E8FF;
+    color: #3B53A2;
+    font-size: 16px;
+}
+
+.ivu-menu-item-selected {
+    background-color: #B1BEE2 !important;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-opened,
+.ivu-menu-light.ivu-menu-vertical .ivu-menu-opened .ivu-menu-item {
+    background-color: #D5DEF9;
+}
+
+.ivu-menu-submenu .ivu-menu-item {
+    font-size: 14px;
+    position: relative;
+    padding-left: 55px !important;
+}
+
+.ivu-menu-submenu .ivu-menu-item:before {
+    content: ' ';
+    position: absolute;
+    left: 40px;
+    top: 21px;
+    width: 4px;
+    height: 4px;
+    background-color: #3B53A2;
+    border-radius: 100%;
+}
+
+.ivu-menu-item-selected:before {
+    background-color: #fff !important;
+}
+
+.ivu-layout-content {
+    background-color: #fff;
+    padding: 20px 40px;
+    background-color: rgba(251, 252, 255);
+}
+
+.ivu-table-wrapper {
+    border-radius: 10px;
+    overflow-x: hidden;
+    border: none;
+}
+
+.ivu-table { 
+    background-color: rgba(251, 252, 255)
+}
+
+.ivu-table th {
+    background-color: #ECF1FF;
+    border: 2px solid #F4F7FE;
+    color: #53657B;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.ivu-table-tip {
+    overflow: hidden;
+}
+
+.ivu-table-body {
+    font-size: 14px;
+}
+
+.ivu-table:after,
+.ivu-table:before {
+    width: 0;
+}
+
+.ivu-table .ivu-table-tip td {
+    width: 100% !important;
+}
+
+.ivu-form-item .ivu-form-item .ivu-form-item-content {
+    /* margin-left: 100px !important; */
+}
+
+.save-box button {
+    margin-right: 30px;
+}
+
+.ivu-form .ivu-form-item-label {
+    font-size: 14px;
+}
+
+.ivu-page {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.ivu-col {
+    margin-top: 15px;
+}
+
+.ivu-col .label {
+    width: 60px;
+    display: inline-block;
+    text-align: right;
+}
+
+.ivu-divider-horizontal {
+    margin: 14px 0;
+}
+
+.ivu-collapse-header {
+    background-color: #ECF1FF;
+}
+
+.ivu-form-item-required > .ivu-form-item-label {
+    padding-left: 0!important;
+}
+
+.ivu-input-number {
+    width: 50%;
+}
+.ivu-tag-text {
+    word-break: break-all;
+}
+.table-tag > .ivu-tag {
+    max-width: 200px;
+}
+
+.table-tag > .ivu-tag > .ivu-tag-text {
+    display: inline-block;
+    max-width: 80%;
+    min-width: 100px;
+    text-align: left;
+    height: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.table-tag > .ivu-tag > .ivu-icon-ios-close { 
+    /* position: absolute;
+    right: 4px;
+    top: 4px;
+    left: unset; */
+    margin-top: -12px;
+}
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+.ivu-select-item {
+    padding: 7px 25px 7px 8px;
+}
+
+.ivu-table-overflowX::-webkit-scrollbar {
+    background: rgba(0, 0, 0, 0);
+}
+.ivu-table-overflowX::-webkit-scrollbar-thumb {
+    background: rgba(187, 184, 184, 0.2);
+}
