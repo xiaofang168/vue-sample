@@ -35,7 +35,8 @@
 						</Sider>
 						<Content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
 							<router-link to="/">Home</router-link> |
-							<router-link to="/about">About</router-link>
+							<router-link to="/about">About</router-link>|
+							<router-link to="/settings">Setting</router-link>
 							<Spin v-if="show_loading" size="large" fix />
 							<div v-else>
 								<!-- 路由出口 -->
@@ -52,6 +53,15 @@
 <script>
 	export default {
 		name: 'App',
-		show_loading: true
+		data() {
+			return {
+				show_loading: true
+			};
+		},
+		async created() {
+			setTimeout(() => {
+				this.show_loading = false
+			}, 2000);
+		}
 	}
 </script>
