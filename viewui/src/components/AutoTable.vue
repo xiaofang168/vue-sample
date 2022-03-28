@@ -64,7 +64,7 @@
 		},
 		computed: {
 			columns2() {
-				return this.columns.map((c, i) => _.extend({
+				return this.columns.map((c) => _.extend({
 					align: 'center'
 				}, c, {
 					render: c.mapper && ((h, ctx) => h('span', c.mapper[ctx.row[c.key]] || ctx.row[c.key])) ||

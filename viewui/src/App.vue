@@ -22,7 +22,7 @@
 				<Content :style="{padding: '24px 0', minHeight: '280px'}">
 					<Layout>
 						<Sider hide-trigger>
-							<Menu active-name="1-2" width="auto">
+							<Menu active-name="1-1" width="auto" :open-names="open_names">
 								<Submenu name="1">
 									<template slot="title">
 										<Icon type="ios-navigate"></Icon>
@@ -55,6 +55,7 @@
 		name: 'App',
 		data() {
 			return {
+				open_names:['1'],
 				show_loading: true
 			};
 		},
