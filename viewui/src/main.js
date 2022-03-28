@@ -5,9 +5,13 @@ import './assets/fonts/iconfont.css';
 import './assets/css/reset.css';
 import './assets/css/common.css';
 import './assets/css/ivu.css';
+import router from './router'
+import store from './store'
 
 Vue.config.productionTip = false
 
 new Vue({
-  render: h => h(App),
+  router,
+  store,
+  render: h => h(App)
 }).$mount('#app')

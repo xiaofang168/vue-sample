@@ -34,7 +34,14 @@
 							</Menu>
 						</Sider>
 						<Content :style="{padding: '24px', minHeight: '280px', background: '#fff'}">
-							Content
+							<router-link to="/">Home</router-link> |
+							<router-link to="/about">About</router-link>
+							<Spin v-if="show_loading" size="large" fix />
+							<div v-else>
+								<!-- 路由出口 -->
+								<!-- 路由匹配到的组件将渲染在这里 -->
+								<router-view />
+							</div>
 						</Content>
 					</Layout>
 				</Content>
@@ -44,6 +51,7 @@
 </template>
 <script>
 	export default {
-		name: 'App'
+		name: 'App',
+		show_loading: true
 	}
 </script>

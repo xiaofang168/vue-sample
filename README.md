@@ -42,3 +42,14 @@ div会被渲染到页面上
 ``` html
 <a v-on:click="show()"> 超链接点击事件 </a>
 ```
+
+## 导航
+vue-router
+- <router-link :to="...">
+用于超链接
+
+- router.push(...)
+用于点击事件
+
+## 状态管理
+vuex
