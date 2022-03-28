@@ -11,8 +11,16 @@
 </template>
 
 <script>
+	import AutoTable from '../components/AutoTable.vue'
+	import SettingEdit from './SettingEdit.vue';
+	import {
+		showModal
+	} from '../components/modals';
 	export default {
 		name: 'SettingList',
+		components: {
+			AutoTable
+		},
 		data() {
 			return {
 				table: {
@@ -35,6 +43,18 @@
 					}]
 				}
 			};
+		},
+		methods: {
+			async handleEdit(row) {
+				const current_page = row ? this.$refs.table.current : 1;
+				let r = await showModal(SettingEdit, {
+					row_data: row,
+					is_edit: row ? true : false
+				}, {
+					title: row ? `修改配置` : `新增配置`
+				});
+				if (r) this.$refs.table.reload(current_page);
+			}
 		}
 	};
 </script>

@@ -7,7 +7,11 @@
 </template>
 
 <script>
+	import AutoButton from './AutoButton.vue';
 	export default {
+		components: {
+			AutoButton
+		},
 		props: {
 			buttons: {
 				type: Array,

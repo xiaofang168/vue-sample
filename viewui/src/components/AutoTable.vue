@@ -13,6 +13,7 @@
 	import http from '../libs/http';
 	import _ from 'underscore';
 	import qs from 'qs';
+	import AutoTableButtons from './AutoTableButtons.vue';
 
 	export default {
 		// 父类传递的值
@@ -130,7 +131,7 @@
 				params = qs.stringify(params, {
 					arrayFormat: 'comma'
 				});
-				const url = '';
+				const url = '&' + params;
 				let p = http.get(url);
 				return p.then(r => {
 					const {

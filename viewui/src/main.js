@@ -8,15 +8,6 @@ import './assets/css/ivu.css';
 import router from './router'
 import store from './store'
 
-import AutoTable from './components/AutoTable.vue';
-import AutoButton from './components/AutoButton.vue';
-import AutoTableButtons from './components/AutoTableButtons.vue';
-
-// 注册组件
-Vue.component('AutoTable', AutoTable);
-Vue.component('AutoButton', AutoButton);
-Vue.component('AutoTableButtons', AutoTableButtons);
-
 Vue.config.productionTip = false
 
 new Vue({
